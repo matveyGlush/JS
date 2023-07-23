@@ -1,0 +1,37 @@
+body {
+  max-width: 60%;
+  margin: 40px auto;
+}
+
+.form-input {
+  border-radius: 6px;
+}
+
+.form_date-input {
+  width: 70px;
+}
+
+.card-num {
+  position: relative;
+}
+
+.input-group {
+  display: block;
+  width: 100%;
+}
+
+.input-group .form-input {
+  width: 100%;
+}
+
+#ccicon {
+  position: absolute;
+  top: 17%;
+  left: 102%;
+  width: 40px;
+  height: 25px;
+}
+
+.just-validate-error-label {
+  width: max-content;
+}

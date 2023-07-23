@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>card form</title>
+  <link rel="stylesheet" href="styles/spectre.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <script defer src="https://unpkg.com/imask"></script>
+  <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
+  <script defer src="scripts/script.js" type="module"></script>
+</head>
+<body>
+  <h1>online payment form</h1>
+  <form id="form" class="form-horizontal">
+    <div class="form-group">
+      <div class="col-2 col-sm-12">
+        <label class="form-label" for="cardNumber">Card number</label>
+      </div>
+      <div class="col-4 col-sm-12 card-num">
+        <input class="form-input" type="text" id="cardNumber" placeholder="0000 0000 0000 0000">
+        <svg id="ccicon" width="70" height="40" viewBox="0 0 750 471" version="1.1" xmlns="http://www.w3.org/2000/svg"></svg>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-2 col-sm-12">
+        <label class="form-label" for="cardDate">Card date</label>
+      </div>
+      <div class="form_date-input">
+        <div class="input-group">
+          <input class="form-input" type="text" id="cardDate">
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-2 col-sm-12">
+        <label class="form-label" for="cardCVC">CVC code</label>
+      </div>
+      <div class="col-1 col-sm-12">
+        <input class="form-input" id="cardCVC" type="text" placeholder="CVC">
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-2 col-sm-12">
+        <label class="form-label" for="cardEmail">Email</label>
+      </div>
+      <div class="col-6 col-sm-12">
+        <input class="form-input" id="cardEmail" type="email" placeholder="sobaka@kusaca.gav">
+      </div>
+    </div>
+    <button id="submit-btn" class="btn btn-primary input-group-btn" type="submit" disabled>Submit</button>
+  </form>
+  <h2>testing</h2>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>name</th>
+      <th>number</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr class="active">
+      <td>mir</td>
+      <td>2200770889687069</td>
+    </tr>
+    <tr class="active">
+      <td>visa</td>
+      <td>4000056655665556</td>
+    </tr>
+    <tr class="active">
+      <td>mastercard</td>
+      <td>5200828282828210</td>
+    </tr>
+    <tr class="active">
+      <td>discover</td>
+      <td>6011000990139424</td>
+    </tr>
+    <tr class="active">
+      <td>diners</td>
+      <td>30569309025904</td>
+    </tr>
+    <tr class="active">
+      <td>jcb</td>
+      <td>3566002020360505</td>
+    </tr>
+    <tr class="active">
+      <td>unionpay</td>
+      <td>6222657083638169</td>
+    </tr>
+    <tr class="active">
+      <td>maestro</td>
+      <td>6759649826438453</td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/*glob*/
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0 auto;
+  max-width: 1920px;
+  min-width: 320px;
+  background-color: #f9f7fc;
+  font-family: 'Aboreto', cursive;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  max-width: 1200px;
+  padding: 40px 15px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+/*styles*/
+
+.game {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 15px 0;
+  width: 15%;
+  height: 180px;
+  background-color: rgb(65, 33, 91);
+  color: transparent;
+  font-size: 42px;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color .15s, color .15s, transform .15s;
+}
+
+.card.open {
+  background-color: rgb(229, 200, 165);
+  color: rgb(60, 52, 42);
+}
+
+.card.success {
+  background-color: rgb(23, 73, 13);
+  color: #fff;
+  transform: scale(0.95);
+}
+
+/* timer styles */
+
+.timer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.timer__text {
+  margin: 0 5px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.timer__value {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.chess-img {
+  opacity: 0;
+  transition: opacity .15s;
+}
+
+.show-img {
+  opacity: 1;
+}
